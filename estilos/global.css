@@ -14,3 +14,7 @@
     --preto: #373737;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}

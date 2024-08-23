@@ -1,5 +1,50 @@
 @charset "UTF-8";
 
+header{
+    background-color: var(--preto);
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: nowrap;
+}
+
 img{
-    width: 30%;
+    width: 40%;
+}
+
+#burguer{
+    color: var(--vermelho);
+    font-size: 2em;
+    text-align: right;
+    margin: 5% 25px;
+    position: relative;
+}
+
+nav{
+    width: 80%;
+    height: 100vh;
+    text-align: left;
+    background-color: var(--preto);
+    right: 0%;
+    position: absolute;
+}
+
+ul{
+    list-style-type: none;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+ul > li{
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.247);
+}
+
+nav > ul > li > a{
+    color: white;
+    font-size: 1.2em;
+    font-family: var(--fonte-destaque);
+    text-decoration: none;
 }
