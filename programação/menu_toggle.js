@@ -1,2 +1,4 @@
-const btnMenu = document.querySelector(".btnMenu")
-console.log(btnMenu)
+function clickMenu() {
+    const menuLista = document.querySelector("#menuLista")
+    menuLista.classList.toggle("ocultado")
+}

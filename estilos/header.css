@@ -10,6 +10,7 @@ header{
 
 img{
     width: 40%;
+    margin: 10px;
 }
 
 #burguer{
@@ -21,12 +22,25 @@ img{
 }
 
 nav{
+    display: block;
     width: 80%;
     height: 100vh;
     text-align: left;
     background-color: var(--preto);
     right: 0%;
     position: absolute;
+}
+
+nav.ocultado{
+    display: none;
+}
+
+#arrowForward{
+    color: var(--vermelho);
+    font-size: 2em;
+    display: block;
+    width: 80%;
+    margin: 20px auto;
 }
 
 ul{
