@@ -27,12 +27,14 @@ nav{
     height: 100vh;
     text-align: left;
     background-color: var(--preto);
-    right: 0%;
-    position: absolute;
+    right: -80%;
+    position: fixed;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
 }
 
 nav.ocultado{
-    display: none;
+    right: 0%;
 }
 
 #arrowForward{
