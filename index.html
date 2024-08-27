@@ -17,17 +17,40 @@
         <span id="burguer" class="material-symbols-rounded btnMenu" onclick="clickMenu()">
             menu
         </span>
-        <nav id="menuLista" class="ocultado">
+        <nav id="menuLista">
             <span id="arrowForward" class="material-symbols-rounded btnMenu" onclick="clickMenu()">
                 arrow_forward
             </span>
             <ul>
-                <li><a href="#">Soluções <span class="material-symbols-outlined arrowDown">
-                    arrow_drop_down
-                    </span></a></li>
-                <li><a href="#">Cases<span class="material-symbols-outlined arrowDown">
-                    arrow_drop_down
-                    </span></a></li>
+                <li id="solucoesDropDown" class="escondeDropDown" onclick="solucoesDropDown()">
+                    Soluções 
+                    <span class="material-symbols-outlined arrowDown">
+                        arrow_drop_down
+                    </span>
+                    <ul class="dropdown">
+                        <li><a href="">Controle de acesso facial</a></li>
+                        <li><a href="">Controle de acesso por proximidade</a></li>
+                        <li><a href="">Controle de acesso biométrico</a></li>
+                        <li><a href="">Controle de acesso por senha</a></li>
+                        <li><a href="">Fechadura digital</a></li>
+                        <li><a href="">Controle de acesso UHF</a></li>
+                        <li><a href="">Softwares para controle de acesso</a></li>
+                        <li><a href="">Cancelas</a></li>
+                        <li><a href="">Catracas de acesso</a></li>
+                    </ul>
+                </li>
+                <li id="casesDropDown" class="escondeDropDown" onclick="casesDropDown()">
+                    Cases
+                    <span class="material-symbols-outlined arrowDown">
+                        arrow_drop_down
+                    </span>
+                    <ul class="dropdown">
+                        <li><a href="">Colégio</a></li>
+                        <li><a href="">Condomínio</a></li>
+                        <li><a href="">Governo</a></li>
+                        <li><a href="">Corporativo</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Parcerias</a></li>
                 <li><a href="#">Contato</a></li>
                 <li><a href="#">Sobre nós</a></li>

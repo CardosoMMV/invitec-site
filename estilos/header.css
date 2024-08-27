@@ -27,8 +27,9 @@ nav{
     height: 100vh;
     text-align: left;
     background-color: var(--preto);
-    right: -80%;
+    overflow-y: auto;
     position: fixed;
+    right: -80%;
     transition-timing-function: ease-in-out;
     transition-duration: 0.5s;
 }
@@ -56,11 +57,27 @@ ul > li{
     width: 100%;
     margin-bottom: 20px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.247);
+    color: white;
+    font-size: 1.2em;
+    font-family: var(--fonte-destaque);
 }
 
-nav > ul > li > a{
+nav a{
     color: white;
     font-size: 1.2em;
     font-family: var(--fonte-destaque);
     text-decoration: none;
+}
+
+.dropdown{
+    width: 100%;
+}
+
+.dropdown a{
+    font-size: 0.8em;
+}
+
+.escondeDropDown > ul{
+    height: 0;
+    overflow: hidden;
 }
