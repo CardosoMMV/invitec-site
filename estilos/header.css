@@ -71,13 +71,15 @@ nav a{
 
 .dropdown{
     width: 100%;
+    max-height: 500px;
 }
 
 .dropdown a{
     font-size: 0.8em;
 }
 
-.escondeDropDown > ul{
-    height: 0;
+.escondeDropDown > .dropdown{
+    max-height: 0;
     overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
 }
