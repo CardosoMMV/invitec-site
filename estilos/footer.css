@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+form{
+    width: 80%;
+    margin: 60px auto;
+}
+
+fieldset{
+    border: none;
+    width: 80%;
+    margin: auto;
+}
+
+legend{
+    color: var(--preto);
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    font-weight: 500;
+}
+
+input{
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 10px;;
+    display: block;
+    width: 100%;
+    margin: 8px;
+    padding: 10px;
+}
+
+.container{
+    display: flex;
+    align-content: start;
+}
+
+input[type="tel"]{
+    display: inline;
+}
+
+#btnSend{
+    width: 20%;
+}
+
+#pFooter{
+    text-align: center;
+    margin: 10px;
+}
