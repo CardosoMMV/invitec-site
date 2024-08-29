@@ -1,11 +1,13 @@
 @charset "UTF-8";
 
 form{
+    background-color: black;
     width: 80%;
     margin: 60px auto;
 }
 
 fieldset{
+    background-color: orange;
     border: none;
     width: 80%;
     margin: auto;
@@ -23,22 +25,8 @@ input{
     border: none;
     border-radius: 10px;;
     display: block;
-    width: 100%;
-    margin: 8px;
+    margin: 8px auto;
     padding: 10px;
-}
-
-.container{
-    display: flex;
-    align-content: start;
-}
-
-input[type="tel"]{
-    display: inline;
-}
-
-#btnSend{
-    width: 20%;
 }
 
 #pFooter{
