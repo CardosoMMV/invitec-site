@@ -7,26 +7,20 @@
     <link rel="stylesheet" href="estilos/global.css">
     <link rel="stylesheet" href="estilos/header.css">
     <link rel="stylesheet" href="estilos/footer.css">
-    <link rel="shortcut icon" href="medias/imagens/fav-logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="medias/imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="programação/menu_toggle.js"></script>
 </head>
 <body>
     <header>
-        <img src="medias/imagens/logomarca-completa.png" alt="Logomarca Invitec"><!--Definir classe para esta imagem e alterar no header.css-->
-        <span id="burguer" class="material-symbols-rounded btnMenu" onclick="clickMenu()">
-            menu
-        </span>
+        <img class="logomarca-invitec" src="medias/imagens/logomarca-completa.png" alt="Logomarca Invitec">
+        <svg id="burguer" onclick="clickMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E21C21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
         <nav id="menuLista">
-            <span id="arrowForward" class="material-symbols-rounded btnMenu" onclick="clickMenu()">
-                arrow_forward
-            </span>
+            <svg onclick="clickMenu()" id="arrowForward" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E21C21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             <ul>
                 <li id="solucoesDropDown" class="escondeDropDown" onclick="solucoesDropDown()">
                     Soluções 
-                    <span class="material-symbols-outlined arrowDown">
-                        arrow_drop_down
-                    </span>
+                    <svg id="escondeDropDown__solucoes-chevron-right" class="chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
                     <ul class="dropdown">
                         <li><a href="">Controle de acesso facial</a></li>
                         <li><a href="">Controle de acesso por proximidade</a></li>
@@ -41,9 +35,7 @@
                 </li>
                 <li id="casesDropDown" class="escondeDropDown" onclick="casesDropDown()">
                     Cases
-                    <span class="material-symbols-outlined arrowDown">
-                        arrow_drop_down
-                    </span>
+                    <svg id="escondeDropDown__cases-chevron-right" class="chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
                     <ul class="dropdown">
                         <li><a href="">Colégio</a></li>
                         <li><a href="">Condomínio</a></li>

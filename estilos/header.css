@@ -8,16 +8,14 @@ header{
     flex-wrap: nowrap;
 }
 
-img{
+.logomarca-invitec{
     width: 40%;
     margin: 10px;
 }
 
 #burguer{
-    color: var(--vermelho);
-    font-size: 2em;
     text-align: right;
-    margin: 5% 25px;
+    margin: 8% 25px;
     position: relative;
 }
 
@@ -39,11 +37,18 @@ nav.ocultado{
 }
 
 #arrowForward{
-    color: var(--vermelho);
-    font-size: 2em;
     display: block;
-    width: 80%;
-    margin: 20px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+}
+
+.escondeDropDown__solucoes-chevron-right-actived{
+    transform: rotate(0.25turn);
+}
+
+.chevron-right{
+    transition: transform .3s ease;
 }
 
 ul{
@@ -71,7 +76,7 @@ nav a{
 
 .dropdown{
     width: 100%;
-    max-height: 500px;
+    max-height: 600px;
 }
 
 .dropdown a{
