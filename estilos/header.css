@@ -8,6 +8,11 @@ header{
     flex-wrap: nowrap;
 }
 
+img{
+    width: 40%;
+    margin: 10px;
+}
+
 #burguer{
     color: var(--vermelho);
     font-size: 2em;
