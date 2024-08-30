@@ -58,10 +58,10 @@
         <form autocomplete="on">
             <fieldset>
                 <legend>Newsletter</legend>
-                <input type="email" id="email" placeholder="exemplo@email.com">
+                <input type="email" id="email" placeholder="exemplo@email.com" required>
                 <div class="container">
-                    <input type="tel" id="telefone" placeholder="(__) _ ____ - ____">
-                    <img id="btnSend" src="medias/imagens/btnSend.png" alt="Send">
+                    <input type="tel" id="telefone" placeholder="(__) _ ____ - ____" required pattern="^\(\d{2}\) \d{5}-?\d{4}$">
+                <img id="btnSend" src="medias/imagens/btnSend.png" alt="Send">
                 </div>
             </fieldset>
         </form>
