@@ -1,14 +1,5 @@
 @charset "UTF-8";
 
-/*Typical Devices Breakpoints
------------------------------------
-Pequenas telas: até 600px
-Celular: de 600px até 768px
-Tablet: 769px até 992px
-Desktop: 993px 1200px
-Grandes telas: acima de 1200px
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 

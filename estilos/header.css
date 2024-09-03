@@ -51,14 +51,14 @@ nav.ocultado{
     transition: transform .3s ease;
 }
 
-.menu{
+ul{
     list-style-type: none;
     width: 80%;
     margin: auto;
     margin-top: 5%;
 }
 
-.menu__opcoes{
+ul > li{
     width: 100%;
     margin-bottom: 20px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.247);
@@ -74,50 +74,17 @@ nav a{
     text-decoration: none;
 }
 
-.menu__opcoes > span{
-    font-size: 1.2em;
-    font-family: var(--fonte-destaque);
-}
-
 .dropdown{
-    list-style-type: none;
     width: 100%;
     max-height: 600px;
 }
 
-.dropdown__opcoes{
-    margin: 20px 0;
-}
-
 .dropdown a{
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 .escondeDropDown > .dropdown{
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
-}
-@media (min-width: 800px) {
-    #burguer{
-        display: none;
-    }
-    nav{
-        text-align: left;
-        position: fixed;
-        right: 0%;
-        height: ;
-        transition-timing-function: ease-in-out;
-        transition-duration: 0.5s;
-    }
-    
-    nav.ocultado{
-        right: 0%;
-    }
-    #arrowForward{
-        display: none;
-    }
-    .menu{
-        display: flex;
-    }
 }
