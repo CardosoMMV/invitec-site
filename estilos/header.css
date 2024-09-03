@@ -19,7 +19,7 @@ header{
     position: relative;
 }
 
-nav{
+.navegacao{
     display: block;
     width: 80%;
     height: 100vh;
@@ -32,7 +32,7 @@ nav{
     transition-duration: 0.5s;
 }
 
-nav.ocultado{
+.ocultado{
     right: 0%;
 }
 
@@ -51,7 +51,7 @@ nav.ocultado{
     transition: transform .3s ease;
 }
 
-ul{
+.navegacao__menulist{
     list-style-type: none;
     width: 80%;
     margin: auto;
@@ -59,19 +59,25 @@ ul{
 }
 
 ul > li{
+    list-style-type: none;
     width: 100%;
-    margin-bottom: 20px;
+    margin: 20px 0;
     border-bottom: 2px solid rgba(255, 255, 255, 0.247);
     color: white;
     font-size: 1.2em;
     font-family: var(--fonte-destaque);
 }
 
-nav a{
+.navegacao a{
     color: white;
     font-size: 1.2em;
     font-family: var(--fonte-destaque);
     text-decoration: none;
+}
+
+.navegacao__menulist__opcoes span{
+    font-size: 1.2em;
+    font-family: var(--fonte-destaque);
 }
 
 .dropdown{

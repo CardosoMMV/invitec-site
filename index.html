@@ -15,10 +15,10 @@
     <header>
         <img class="logomarca-invitec" src="medias/imagens/logomarca-completa.png" alt="Logomarca Invitec">
         <svg id="burguer" onclick="clickMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E21C21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-        <nav id="menuLista">
+        <nav class="navegacao" id="menuLista">
             <svg onclick="clickMenu()" id="arrowForward" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E21C21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-            <ul>
-                <li id="solucoesDropDown" class="escondeDropDown" onclick="solucoesDropDown()">
+            <ul class="navegacao__menulist">
+                <li class="navegacao__menulist__opcoes" id="solucoesDropDown" class="escondeDropDown" onclick="solucoesDropDown()">
                     Soluções 
                     <svg id="escondeDropDown__solucoes-chevron-right" class="chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
                     <ul class="dropdown">
@@ -33,8 +33,8 @@
                         <li><a href="">Catracas de acesso</a></li>
                     </ul>
                 </li>
-                <li id="casesDropDown" class="escondeDropDown" onclick="casesDropDown()">
-                    Cases
+                <li class="navegacao__menulist__opcoes" id="casesDropDown" class="escondeDropDown" onclick="casesDropDown()">
+                    <span>Cases</span>
                     <svg id="escondeDropDown__cases-chevron-right" class="chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
                     <ul class="dropdown">
                         <li><a href="">Colégio</a></li>
@@ -43,11 +43,11 @@
                         <li><a href="">Corporativo</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Parcerias</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Sobre nós</a></li>
-                <li><a href="#">Saiba mais</a></li>
-                <li><a href="#">E-commerce</a></li>
+                <li class="navegacao__menulist__opcoes"><a href="#">Parcerias</a></li>
+                <li class="navegacao__menulist__opcoes"><a href="#">Contato</a></li>
+                <li class="navegacao__menulist__opcoes"><a href="#">Sobre nós</a></li>
+                <li class="navegacao__menulist__opcoes"><a href="#">Saiba mais</a></li>
+                <li class="navegacao__menulist__opcoes"><a href="#">E-commerce</a></li>
             </ul>
         </nav>
     </header>
