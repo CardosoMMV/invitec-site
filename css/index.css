@@ -43,6 +43,10 @@
         background: linear-gradient(278deg, rgba(226,28,33,1) 0%, rgba(226,28,33,0.45) 50%, rgba(226,28,33,1) 100%);
 
     }
+    .main__introduction input:hover, .main__solutions input:hover{
+        background-color: var(--vermelho);
+        transition-duration: .3s;
+    }
     .main__img{
         grid-area: img;
         width: 250px;
@@ -67,6 +71,37 @@
         font-size: var(--texto-normal);
         margin: 0px auto 0px;
         line-height: 1.2;
+    }
+    .cases{
+        background-image: url(../imgs/backgrounds/background-cases-mob.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 600px;
+    }
+    .cases__titulo{
+        font-family: var(--open-sans);
+        color: white;
+        font-size: var(--titulo-principal);
+        text-align: center;
+        padding: 30px;
+    }
+    .cases__container-cases{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+    }
+    .cases__container-cases input{
+        color: white;
+        background-color: red;
+        background: linear-gradient(139deg, rgba(226,28,33,1) 0%, #0069b465);
+        width: 140px;
+        margin: 20px;
+        padding: 15px;
+        border: none;
+        border-radius: 10px;
     }
 
 
@@ -115,6 +150,14 @@
     }
     .main__solutions input{
         display: none;
+    }
+    .cases{
+        height: 590px;
+    }
+    .cases__container-cases input{
+        width: 200px;
+        margin: 80px;
+        padding: 15px;
     }
 }@media (min-width:1025px) {
     .main__wrapper{
