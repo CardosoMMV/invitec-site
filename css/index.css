@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+
+
+@media (min-width:320px){
+    body{
+        background-image: url("../imgs/backgrounds/background-default.png"); 
+        background-color: #494949;
+        background-position: bottom; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+    }
+    .main__wrapper{
+        margin: 70px auto 80px;
+        display: grid;
+        width: 90vw;
+        max-width: 1400px;
+        grid-template: 
+        'introduction'
+        'img'
+        'solutions';
+        grid-template-columns: 100%;
+        grid-gap: 10px;
+        color: white;
+    }
+    .main__introduction{
+        grid-area: introduction;
+        font-family: var(--roboto-mono);
+        font-weight: 400;
+        font-size: var(--titulo-principal);
+        text-align: center;
+        width: 80%;
+        margin: 0px auto 60px;
+    }
+    .main__introduction input, .main__solutions input{
+        font-size: var(--titulo-secundario);
+        color: white;
+        padding: 6px 20px;
+        margin-top: 20px;
+        border-radius: 13px;
+        border: none;
+        background: rgb(226,28,33);
+        background: linear-gradient(278deg, rgba(226,28,33,1) 0%, rgba(226,28,33,0.45) 50%, rgba(226,28,33,1) 100%);
+
+    }
+    .main__introduction input:hover, .main__solutions input:hover{
+        background-color: var(--vermelho);
+        transition-duration: .3s;
+    }
+    .main__img{
+        grid-area: img;
+        width: 250px;
+        margin: auto;
+    }
+    .main__solutions{
+        grid-area: solutions;
+        color: white;
+        margin: 50px auto;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .main__solutions h2{
+        font-family: var(--montserrat);
+        font-size: var(--titulo-secundario);
+        margin: 0px auto 20px;
+    }
+    .main__solutions p{
+        font-family: var(--montserrat);
+        font-size: var(--texto-normal);
+        margin: 0px auto 0px;
+        line-height: 1.2;
+    }
+    .cases{
+        background-image: url(../imgs/backgrounds/background-cases-mob.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 600px;
+    }
+    .cases__titulo{
+        font-family: var(--open-sans);
+        color: white;
+        font-size: var(--titulo-principal);
+        text-align: center;
+        padding: 30px;
+    }
+    .cases__container-cases{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+    }
+    .cases__container-cases input{
+        color: white;
+        background-color: red;
+        background: linear-gradient(139deg, rgba(226,28,33,1) 0%, #0069b465);
+        width: 140px;
+        margin: 20px;
+        padding: 15px;
+        border: none;
+        border-radius: 10px;
+    }
+
+
+}@media (min-width:600px) {
+    .main__wrapper{
+        grid-template:
+        "introduction img"
+        "solutions solutions";
+    }
+    .main__introduction{
+        text-align: start;
+        margin: 60px auto 20px;
+    }
+    .main__solutions{
+        margin-top: 0;
+    }
+}@media (min-width:801px) {
+    .main__wrapper{
+        grid-template:
+        "introduction img"
+        "solutions img";
+    }
+    .main__introduction{
+        margin: 20px auto 0;
+        height: 210px;
+    }
+    .main__introduction h1{
+        font-weight: bold;
+        letter-spacing: 4px;
+        line-height: 1.2;
+    }
+    .main__introduction input{
+        font-weight: lighter;
+    }
+    .main__img{
+        width: 330px;
+    }
+    .main__solutions{
+        align-items: start;
+        margin-top: 20px;
+        margin: auto;
+        width: 80%;
+    }
+    .main__solutions h2{
+        margin: 0 0 20px;
+    }
+    .main__solutions input{
+        display: none;
+    }
+    .cases{
+        height: 590px;
+    }
+    .cases__container-cases input{
+        width: 200px;
+        margin: 80px;
+        padding: 15px;
+    }
+}@media (min-width:1025px) {
+    .main__wrapper{
+        margin: 100px auto 140px;
+        grid-template:
+        "introduction img" 40%
+        "solutions img" auto;
+        grid-template-columns: 60% 40%;
+    }
+    .main__introduction{
+        margin-top: 40px;
+    }
+    .main__solutions{
+        justify-content: start;
+    }
+
+}@media (min-width:1281px) {
+    .main__wrapper{
+        margin: 120px auto 190px;
+    }
+}

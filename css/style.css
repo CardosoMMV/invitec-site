@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+/*Importação de fontes: */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto+Mono:wght@400;500;700&display=swap');
+
+/*Variáveis CSS: */
+:root{
+    /*Paleta de Cores: */
+    --vermelho: #E21C21;
+    --amarelo: #F2A007;
+    --verde-whatsapp: #02A25D;
+    --azul-gradiente: #382CBF;
+    --azul-idcontrol: #0069B4;
+    --cor-fundo: #292929;
+    --cor-fundo-transparente: #292929ec;
+
+    /*Tipografia: */
+    --montserrat: 'Montserrat', sans-serif;
+    --open-sans: 'Open Sans', sans-serif;
+    --roboto-mono: 'Roboto Mono', monospace;
+}
+
+@media (min-width:320px){
+    :root{
+        --titulo-principal: calc(0.7vw + 20px);
+        --titulo-secundario: calc(0.7vw + 17px);
+        --texto-destaque: calc(0.5vw + 15px);
+        --texto-normal: calc(0.5vw + 13px);
+    }
+}@media (min-width:801px) {
+    :root{
+        --titulo-principal: calc(0.7vw + 20px);
+        --titulo-secundario: calc(0.7vw + 20px);
+        --texto-destaque: calc(0.5vw + 12.5px);
+        --texto-normal: calc(0.5vw + 11px);
+    }
+}@media (min-width:1025px) {
+    :root{
+        --titulo-principal: calc(0.7vw + 20px);
+        --titulo-secundario: calc(0.7vw + 20px);
+        --texto-destaque: calc(0.5vw + 15px);
+        --texto-normal: calc(0.5vw + 11px);
+    }
+}@media (min-width:1281px) {
+    :root{
+        --titulo-principal: calc(0.7vw + 20px);
+        --texto-destaque: 22px;
+        --texto-normal: 17px;
+    }  
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Links*/
+a{
+    font-family: var(--open-sans);
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+a:hover{
+    color: #791014;
+}
