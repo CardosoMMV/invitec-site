@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/*Importações*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*Configurando variáveis*/
+:root{
+    --vermelho: #E21C21;
+    --amarelo: #F2A007;
+    --roxo: #6805F2;
+    --gradiente: linear-gradient(145deg, rgba(191,44,71,1) 6%, rgba(113, 44, 191, 0.548) 72%);
+    --titulo: 'Comfortaa', sans-serif;
+    --texto: 'Montserrat', sans-serif;
+}
