@@ -6,7 +6,17 @@
     --vermelho: #E21C21;
     --amarelo: #F2A007;
     --roxo: #6805F2;
+    --preto: #292829;
     --gradiente: linear-gradient(145deg, rgba(191,44,71,1) 6%, rgba(113, 44, 191, 0.548) 72%);
     --titulo: 'Comfortaa', sans-serif;
     --texto: 'Montserrat', sans-serif;
+}
+/*Configurações globais*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #373737;
 }
