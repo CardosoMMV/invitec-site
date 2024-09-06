@@ -150,3 +150,8 @@
         transition-duration: .2s;
     }
 }
+@media (max-width: 900px) and (orientation: landscape){
+    .main-list{
+        height: 40vh;
+    }
+}
