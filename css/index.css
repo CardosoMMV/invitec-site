@@ -46,6 +46,27 @@ body{
     margin: 20px 0px;
 }
 /*SECTION SOBRE NÓS*/
+.sobre-nos{
+    background-color: var(--preto);
+    background-image: url(../imgs/backgrounds/background-sobre-mob.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+}
+#sobre-nos__title{
+    margin: 0;
+}
+#sobre-nos__video-invitec{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 250px;
+    margin: auto;
+}
 
 /*MEDIA TYPE: TELAS MÉDIAS*/
 @media (min-width: 905px){
