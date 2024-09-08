@@ -23,10 +23,6 @@ body{
 }
 /*SECTION SOLUCOES*/
 .solucoes{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    align-items: center;
     background-color: var(--preto);
     background-image: url(../imgs/backgrounds/background-cases-mob.png);
     background-repeat: no-repeat;
@@ -34,17 +30,36 @@ body{
     width: 100%;
     height: 600px;
 }
+.solucoes__title{
+    margin: 100px auto;
+}
+.solucoes__container-btns{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80%;
+}
 .btn__type3--solucoes{
     width: 200px;
     height: 45px;
-    margin: 20px 100px;
+    margin: 20px 0px;
 }
+/*SECTION SOBRE NÓS*/
+
 /*MEDIA TYPE: TELAS MÉDIAS*/
 @media (min-width: 905px){
     .solucoes{
+        background-image: url(../imgs/backgrounds/background-cases-desk.png);
+    }
+    .solucoes__container-btns{
         flex-flow: row wrap;
         justify-content: center;
-        background-image: url(../imgs/backgrounds/background-cases-desk.png);
+    }
+    .btn__type3--solucoes{
+        width: 200px;
+        height: 45px;
+        margin: 20px 30px;
     }
 }
 /*MEDIA TYPE: TELAS GRANDES*/
