@@ -7,7 +7,7 @@
     --amarelo: #F2A007;
     --roxo: #6805F2;
     --preto: #292829;
-    --gradiente: linear-gradient(145deg, rgba(191,44,71,1) 6%, rgba(113, 44, 191, 0.548) 72%);
+    --gradiente: linear-gradient(145deg, rgb(209, 16, 51) 10%, rgba(116, 49, 192, 0.788) 90%);
     --titulo: 'Comfortaa', sans-serif;
     --texto: 'Montserrat', sans-serif;
 }
@@ -20,6 +20,87 @@
 /*Configurações globais*/
 h1{
     color: white;
+    font-size: 2em;
     font-family: var(--texto);
     font-weight: normal;
+    text-align: center;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.507);
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+}
+h2{
+    color: rgb(230, 230, 230);
+    font-family: var(--texto);
+    font-weight: normal;
+    text-align: left;
+    margin: 10px;
+}
+.p__type1{
+    color: white;
+    font-family: var(--texto);
+    text-align: justify;
+    line-height: 25px;
+    margin: 10px;
+    max-width: 500px;
+}
+.btn__type1{
+    color: white;
+    font-size: 1.08em;
+    font-family: var(--titulo);
+    font-weight: normal;
+    background-color: var(--preto);
+    background-image: linear-gradient(to right, var(--vermelho) 0%,#ff002f63 100%);
+    cursor: pointer;
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 40px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.267);
+}
+.btn__type1:hover{
+    background-image: none;
+    background-color: var(--vermelho);
+    transition-duration: 1s;
+}
+.btn__type2{
+    color: white;
+    font-family: var(--titulo);
+    font-weight: normal;
+    background-color: var(--preto);
+    background-image: linear-gradient(to right, var(--amarelo) 21%, #b47706d0 96%);
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.267);
+}
+.btn__type2:hover{
+    background-image: none;
+    background-color: var(--amarelo);
+    transition-duration: 1s;
+}
+.btn__type3{
+    color: white;
+    font-family: var(--titulo);
+    font-weight: normal;
+    background-color: var(--preto);
+    background-image: var(--gradiente);
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.267);
+}
+.btn__type3:hover{
+    background-image: none;
+    background-color: rgb(209, 16, 51) ;
+    transition-duration: 1s;
 }

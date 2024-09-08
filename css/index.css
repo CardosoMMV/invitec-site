@@ -3,3 +3,38 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.hero{
+    margin: 50px 0;
+}
+.hero__img-mobile{
+    display: block;
+    margin: 40px auto;
+}
+.hero__img-desktop{
+    display: none;
+    margin: 40px auto;
+}
+.hero__solutions{
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+}
+@media (min-width: 1065px) {
+    .hero__img-mobile{
+        display: none;
+    }
+    .btn__type1--hero{
+        display: none;
+    }
+    .hero__img-desktop{
+        display: block;
+        height: 100%;
+        margin: 40px;
+    }
+    .hero{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-content: flex-start;
+    }
+}

@@ -60,6 +60,9 @@
     display: block;
 }
 @media (max-width: 900px) {
+    .not-overflow-y{
+        overflow-y: hidden;
+    }
     .navbar{
         display: flex;
         flex-flow: column nowrap;
