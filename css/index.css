@@ -224,6 +224,14 @@ body{
 .footer{
     background-color: white;
     padding-top: 50px;
+    border-top: 2px solid #A0A0A0;
+}
+.footer__container__sections-in-footer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 .logomarca{
     display: none;
@@ -231,9 +239,15 @@ body{
 .contatos{
     display: none;
 }
+.contatos__links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--preto);
+    font-family: var(--texto);
+}
 .newsletter{
-    width: 70%;
-    margin: auto;
+    width: 300px;
 }
 .newsletter input{
     background-color: #D9D9D9;
@@ -265,16 +279,13 @@ body{
     font-family: var(--texto);
     text-align: center;
     font-weight: 600;
+    padding: 20px;
 }
 /*MEDIA TYPES:*/
 @media (min-width: 620px) {
     /*SECTION SOBRE NÓS*/
     #sobre-nos__video-invitec{
         height: 350px;
-    }
-    /*FOOTER*/
-    .newsletter{
-        width: 40%;
     }
 }
 @media (min-width: 905px){
@@ -309,6 +320,13 @@ body{
     /*LAST SECTION*/
     .faq, .contato{
         width: 55%;
+    }
+    /*FOOTER*/
+    .footer__container__sections-in-footer{
+        justify-content: space-between;
+    }
+    .logomarca{
+        display: block;
     }
 }
 @media (min-width: 1065px) {
@@ -354,6 +372,10 @@ body{
     }
     .faq, .contato{
         width: 40%;
+    }
+    /*FOOTER*/
+    .contatos{
+        display: block;
     }
 }
 @media (min-width: 1500px){
