@@ -153,13 +153,71 @@ body{
     background-color: white;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding: 20px;
+}
+.faq, .contato{
+    margin: 20px;
+    width: 70%;
+}
+.faq__article{
+    border-bottom: 2px solid #A0A0A0;
+    margin: 8px;
+    padding: 10px;
 }
 .faq__article__question{
     display: flex;
     flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.faq__article__answer{
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 4px;
+}
+.faq__article__answer--active{
+    height: auto;
+    overflow: auto;
+    opacity: 1;
+    transition-duration: 1s;
+}
+.chevron-right{
+    transform: rotate(-90deg);
+}
+.chevron-right--active{
+    transform: rotate(90deg);
+    transition-duration: .5s;
+}
+.contato{
+    box-shadow: 0 0 10px #00000027;
+    border-radius: 20px;
+    padding: 15px;
+    height: 55vh;
+}
+.title-n3--type1--contato{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.3em;
+}
+.contato__paragrafo{
+    color: var(--preto);
+    font-family: var(--texto);
+    width: 80%;
+    margin: 40px auto;
+}
+.btn__type4--link{
+    padding: 0;
+    width: 70%;
+    height: 50px;
+    border-radius: 13px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 /*MEDIA TYPES:*/
 @media (min-width: 620px) {
@@ -196,6 +254,10 @@ body{
     /*ABERTURA CHAMADO*/
     .abertura-chamado{
         background-image: url(../imgs/backgrounds/background-abrir-chamado-desk.png);
+    }
+    /*LAST SECTION*/
+    .faq, .contato{
+        width: 55%;
     }
 }
 @media (min-width: 1065px) {
@@ -235,6 +297,13 @@ body{
     .abertura-chamado__container3{
         width: 60%;
     }
+    /*LAST SECTION*/
+    .last-section{
+        flex-flow: row nowrap;
+    }
+    .faq, .contato{
+        width: 40%;
+    }
 }
 @media (min-width: 1500px){
     /*LINK TO TOP*/
@@ -247,5 +316,9 @@ body{
     }
     .abertura-chamado__container3{
         width: 45%;
+    }
+    /*LAST SECTION*/
+    .faq, .contato{
+        width: 30%;
     }
 }
