@@ -210,7 +210,7 @@ body{
     margin: 40px auto;
 }
 .btn__type4--link{
-    font-size: 1em;
+    font-size: 0.8em;
     padding: 0;
     width: 70%;
     height: 50px;
@@ -285,6 +285,10 @@ body{
     /*SECTION SOBRE NÓS*/
     #sobre-nos__video-invitec{
         height: 350px;
+    }
+    /*LAST SECTION*/
+    .btn__type4--link{
+        font-size: 1.1em;
     }
 }
 @media (min-width: 905px){
