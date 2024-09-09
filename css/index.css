@@ -55,7 +55,7 @@ body{
     position: relative;
 }
 #sobre-nos__title{
-    margin: 0;
+    margin: 0 auto;
 }
 #sobre-nos__video-invitec{
     display: block;
@@ -68,8 +68,15 @@ body{
     margin: auto;
 }
 
-/*MEDIA TYPE: TELAS MÉDIAS*/
+/*MEDIA TYPES:*/
+@media (min-width: 620px) {
+    /*SECTION SOBRE NÓS*/
+    #sobre-nos__video-invitec{
+        height: 350px;
+    }
+}
 @media (min-width: 905px){
+    /*SECTION SOLUÇÕES*/
     .solucoes{
         background-image: url(../imgs/backgrounds/background-cases-desk.png);
     }
@@ -82,8 +89,18 @@ body{
         height: 45px;
         margin: 20px 30px;
     }
+    /*SECTION SOBRE NÓS*/
+    .sobre-nos{
+        background-image: url(../imgs/backgrounds/background-sobre-desk.png);
+        height: 800px;
+    }
+    #sobre-nos__title{
+        padding-top: 65px;
+    }
+    #sobre-nos__video-invitec{
+        height: 450px;
+    }
 }
-/*MEDIA TYPE: TELAS GRANDES*/
 @media (min-width: 1065px) {
     /*MAIN HERO*/
     .hero__img-mobile{
@@ -102,5 +119,9 @@ body{
         flex-flow: row wrap;
         justify-content: space-around;
         align-items: flex-start;
+    }
+    /*SECTION SOBRE NÓS*/
+    #sobre-nos__video-invitec{
+        height: 550px;
     }
 }
