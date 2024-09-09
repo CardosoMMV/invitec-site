@@ -67,7 +67,19 @@ body{
     height: 250px;
     margin: auto;
 }
-
+/*LINK TO-TOP*/
+.to-top{
+    background-color: white;
+    position: relative;
+}
+.to-top img{
+    display: block;
+    width: 40%;
+    position: absolute;
+    top: -47px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 /*MEDIA TYPES:*/
 @media (min-width: 620px) {
     /*SECTION SOBRE NÓS*/
@@ -100,6 +112,10 @@ body{
     #sobre-nos__video-invitec{
         height: 450px;
     }
+    /*LINK-TO-TOP*/
+    .to-top img{
+        width: 25%;
+    }
 }
 @media (min-width: 1065px) {
     /*MAIN HERO*/
@@ -123,5 +139,11 @@ body{
     /*SECTION SOBRE NÓS*/
     #sobre-nos__video-invitec{
         height: 550px;
+    }
+}
+@media (min-width: 1500px){
+    /*LINK TO TOP*/
+    .to-top img{
+        top: -75px;
     }
 }
