@@ -211,6 +211,7 @@ body{
     margin: 40px auto;
 }
 .btn__type4--link{
+    font-size: 1em;
     padding: 0;
     width: 70%;
     height: 50px;
