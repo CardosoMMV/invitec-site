@@ -48,6 +48,10 @@ h2{
     text-align: left;
     margin: 10px;
 }
+.title-n3--type1{
+    color: var(--preto);
+    font-family: var(--titulo);
+}
 .p__type1{
     color: white;
     font-family: var(--texto);

@@ -148,6 +148,19 @@ body{
 .btn__type2--abertura-chamado{
     width: 100px;
 }
+/*LAST SECTION*/
+.last-section{
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.faq__article__question{
+    display: flex;
+    flex-flow: row nowrap;
+}
 /*MEDIA TYPES:*/
 @media (min-width: 620px) {
     /*SECTION SOBRE NÓS*/
