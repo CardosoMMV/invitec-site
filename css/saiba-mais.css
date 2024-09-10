@@ -1,0 +1,72 @@
+.article-saiba-mais{
+    margin-bottom: 50px;
+}
+.article-saiba-mais-title{
+    font-size: 1.2em;
+    text-decoration: underline;
+    text-decoration-color: var(--vermelho);
+}
+.ceo-img{
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.ceo-img__legenda{
+    color: white;
+    font-family: var(--texto);
+    font-size: 0.9em;
+    width: 80%;
+    margin: 5px auto;
+}
+.article-saiba-mais-title2{
+    color: var(--vermelho);
+    font-size: 1.15em;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+.p__type1--p-saiba-mais{
+    margin: 10px auto;
+    width: 80%;
+    text-align: left;
+}
+@media (min-width: 650px) {
+    .article-saiba-mais-title{
+        font-size: 1.7em;
+    }
+    .ceo-img{
+        width: 70%;
+    }
+    .ceo-img__legenda{
+        width: 70%;
+    }
+    .article-saiba-mais-title2{
+        font-size: 1.4em;
+        width: 500px;
+    }
+    .p__type1--p-saiba-mais{
+        width: 500px;
+    }
+}
+@media (min-width: 1065px) {
+    .container__conteudo-saiba-mais{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .container__imagem{
+        width: 500px;
+    }
+    .ceo-img{
+        width: 100%;
+    }
+    .ceo-img__legenda{
+        width: 100%;
+    }
+    .container__nossa-historia{
+        width: 100%;
+    }
+    #teste{
+        width: 100%;
+    }
+}

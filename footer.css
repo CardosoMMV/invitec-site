@@ -1,0 +1,36 @@
+.footer{
+    background-color: #494949;
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.26);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+}
+.contatos{
+    display: none;
+}
+.contatos__links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: var(--texto);
+}
+.footer > p{
+    color: white;
+    font-family: var(--texto);
+    text-align: center;
+    font-weight: normal;
+}
+@media(min-width: 1200px){
+    .footer{
+        flex-flow: row nowrap;
+        gap: 0px;
+    }
+    .contatos{
+        display: block;
+        order: 1;
+    }
+}

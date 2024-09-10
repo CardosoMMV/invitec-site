@@ -18,6 +18,23 @@
     box-sizing: border-box;
 }
 /*Configurações globais*/
+body{
+    background-image: url(../imgs/backgrounds/background-default-gd.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapeamento-site{
+    margin: 12px;
+}
+.mapeamento-site a{
+    color: #C7C7C7;
+    font-family: var(--texto);
+    font-size: 0.7em;
+    text-decoration: none;
+}
+.mapeamento-site span{
+    color: var(--vermelho);
+}
 .title-n1--type1{
     color: white;
     font-size: 1.77em;
