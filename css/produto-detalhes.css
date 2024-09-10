@@ -1,0 +1,115 @@
+.produto{
+    width: 85%;
+    margin: 60px auto;
+}
+.container__produto-detalhes{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.container__descricao{
+    background-color: #4949494f;
+    border-radius: 5px;
+    padding: 15px;
+}
+.descricao__title--n1{
+    color: var(--vermelho);
+    font-family: var(--titulo);
+    font-size: 1.3em;
+    font-weight: none;
+    text-align: center;
+}
+.container__descricao > p{
+    color: white;
+    font-family: var(--texto);
+    text-align: justify;
+    margin: 15px 5px;
+}
+.descricao__title--n2{
+    font-size: 1.2em;
+    margin: 30px 20px;
+}
+.descrica__list{
+    list-style-position: disc;
+}
+.descricao__list li{
+    color: white;
+    font-family: var(--texto);
+    text-align: justify;
+    margin: 15px 20px;
+}
+.descricao__link-download{
+    color: white;
+    font-family: var(--texto);
+    margin: 10px 20px;
+    text-decoration: underline;
+}
+.container__btns{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: start;
+    gap: 15px;
+    margin: 20px;
+    width: 180px;
+}
+.container__btns--2{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.btns{
+    color: white;
+    font-family: var(--texto);
+    font-size: 0.8em;
+    width: 135px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 5px #00000046;
+    cursor: pointer;
+}
+.btns--1{
+    background-color: var(--vermelho);
+}
+.btns--1:hover{
+    background-color: #a0161a;
+}
+.btns--2{
+    background-color: #0069B4;
+}
+.btns--2:hover{
+    background-color: #004e86;
+}
+.btns--3{
+    width: 36px;
+    height: 36px;
+}
+.btns--3:hover{
+    opacity: 0.4;
+}
+@media(min-width: 620px){
+    .container__btns{
+        flex-flow: row nowrap;
+        justify-content: start;
+        align-items: center;
+        width: auto;
+    }
+}
+@media (min-width: 905px) {
+    .container__produto-detalhes{
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    .container__descricao{
+        width: 600px;
+    }
+}
+@media(min-width: 1065px){
+    .container__descricao{
+        width: 800px;
+    }
+}
