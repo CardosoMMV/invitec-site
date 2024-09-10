@@ -35,6 +35,9 @@ body{
 .mapeamento-site span{
     color: var(--vermelho);
 }
+.mapeamento-site span:hover{
+    color: #a0161a;
+}
 .title-n1--type1{
     color: white;
     font-size: 1.77em;

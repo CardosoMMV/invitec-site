@@ -1,72 +1,94 @@
-.article-saiba-mais{
-    margin-bottom: 50px;
-}
-.article-saiba-mais-title{
-    font-size: 1.2em;
+.saiba-mais__title-n1{
+    font-size: 1.3em;
     text-decoration: underline;
     text-decoration-color: var(--vermelho);
 }
-.ceo-img{
+.sobre-nos{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+figure{
+    width: 100%;
+    margin-bottom: 50px;
+}
+#img-ceo{
     display: block;
     width: 80%;
     margin: auto;
 }
-.ceo-img__legenda{
+figcaption{
     color: white;
     font-family: var(--texto);
-    font-size: 0.9em;
+    font-size: 0.8em;
     width: 80%;
-    margin: 5px auto;
+    margin: 6px auto;
 }
-.article-saiba-mais-title2{
+.saiba-mais__sobre-nos__title-n2{
     color: var(--vermelho);
     font-size: 1.15em;
-    width: 80%;
-    margin: auto;
-    margin-top: 30px;
+    margin: 20px 40px;
 }
-.p__type1--p-saiba-mais{
-    margin: 10px auto;
-    width: 80%;
-    text-align: left;
+.container-sobre-nos--text > p , .nossa-historia > p{
+    color: white;
+    font-family: var(--texto);
+    font-size: 1.1em;
+    margin: 10px 0;
+    padding: 0 20px;
 }
-@media (min-width: 650px) {
-    .article-saiba-mais-title{
+.nossa-historia{
+    margin-bottom: 60px;
+}
+@media (min-width: 905px) {
+    #img-ceo, figcaption{
+        width: 60%;
+    }
+    .container-sobre-nos--text, .nossa-historia{
+        width: 70%;
+        margin: auto;
+        margin-bottom: 60px;
+    }
+}
+@media (min-width: 1064px) {
+    .saiba-mais__title-n1{
         font-size: 1.7em;
+        text-align: left;
+        margin: 40px 0 40px 40px;
+        max-width: none;
+        width: calc(100% - 40px);
     }
-    .ceo-img{
-        width: 70%;
+    .sobre-nos{
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
     }
-    .ceo-img__legenda{
-        width: 70%;
+    .saiba-mais__sobre-nos__title-n2{
+        margin: 0 40px;
     }
-    .article-saiba-mais-title2{
-        font-size: 1.4em;
-        width: 500px;
+    figure{
+        width: 35%;
     }
-    .p__type1--p-saiba-mais{
-        width: 500px;
-    }
-}
-@media (min-width: 1065px) {
-    .container__conteudo-saiba-mais{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .container__imagem{
-        width: 500px;
-    }
-    .ceo-img{
+    #img-ceo{
         width: 100%;
     }
-    .ceo-img__legenda{
+    figcaption{
+        width: 80%;
+    }
+    .container-sobre-nos--text{
+        margin: 0;
+        width: 40%;
+    }
+    .nossa-historia{
+        margin: 0 0 60px 0;
         width: 100%;
     }
-    .container__nossa-historia{
-        width: 100%;
+    .nossa-historia > h2{
+        margin-left: 60px !important;
     }
-    #teste{
-        width: 100%;
+    .nossa-historia > p{
+        margin: 15px 40px;
     }
 }
