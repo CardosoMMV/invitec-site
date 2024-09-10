@@ -25,18 +25,22 @@ body{
 }
 .mapeamento-site{
     margin: 12px;
+    color: #C7C7C7;
+    font-family: var(--texto);
+    font-size: 0.7em;
 }
 .mapeamento-site a{
     color: #C7C7C7;
     font-family: var(--texto);
-    font-size: 0.7em;
     text-decoration: none;
 }
-.mapeamento-site span{
-    color: var(--vermelho);
-}
-.mapeamento-site span:hover{
+.mapeamento-site a:hover{
     color: #a0161a;
+}
+.mapeamento-site span{
+    font-family: var(--texto);
+    color: var(--vermelho);
+    cursor: pointer;
 }
 .title-n1--type1{
     color: white;
