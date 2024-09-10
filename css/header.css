@@ -74,6 +74,7 @@
         width: 90vw;
         height: 100vh;
         background-color: #292829e7;
+        z-index: 1000;
     }
     .navbar--actived{
         right: 0;
@@ -83,7 +84,7 @@
         display: block;
         position: absolute;
         right: 20px;
-        z-index: 20;
+        z-index: 1001;
         border: none;
         background-color: transparent;
         cursor: pointer;
