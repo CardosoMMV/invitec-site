@@ -19,7 +19,7 @@
 }
 .card{
     width: 320px;
-    height: 600px;
+    height: 580px;
     padding: 20px;
     background-color: #4747471f;
     border-radius: 5px;
@@ -80,6 +80,6 @@
     }
     .card{
         width: 390px;
-        height: 700px;
+        height: 680px;
     }
 }
